@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-describe("Dummy Test", () => {
+describe("Proj One Test", () => {
   it("Test Home Load", () => {
     cy.visit("http://localhost:3000/");
   });
