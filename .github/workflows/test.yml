@@ -17,4 +17,3 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           project: projects/proj-one
-          start: npm start
