@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "projects/proj-one/**"
+      - .github/workflows/test.yml
   pull_request:
     paths:
       - "projects/proj-one/**"
@@ -10,10 +11,9 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           project: projects/proj-one
+          uses: actions/checkout@v2
           start: npm start
