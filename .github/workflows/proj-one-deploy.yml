@@ -31,3 +31,4 @@ jobs:
         with:
           branch: gh-pages
           folder: projects/proj-one/build
+          working-directory: projects/proj-one
