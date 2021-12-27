@@ -4,6 +4,7 @@ on:
     paths:
       - "projects/proj-one/**"
       - .github/workflows/proj-one.yml
+  pull_request:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
