@@ -20,8 +20,6 @@ jobs:
 
       - name: Install NPM packages
         run: npm install
-        with:
-          project: projects/proj-one
 
       - name: Build Project
         run: npm run build
