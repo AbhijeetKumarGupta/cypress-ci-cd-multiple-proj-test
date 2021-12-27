@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - "projects/proj-one/**"
-      - .github/workflows/test.yml
+      - .github/workflows/proj-one.yml
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
