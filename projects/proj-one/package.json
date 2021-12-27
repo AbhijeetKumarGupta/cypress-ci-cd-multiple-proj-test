@@ -2,7 +2,7 @@
   "name": "proj-one",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abhijeetkumargupta.github.io/multiple-projects-test",
+  "homepage": "https://abhijeetkumargupta.github.io/multiple-projects-test/proj-one",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

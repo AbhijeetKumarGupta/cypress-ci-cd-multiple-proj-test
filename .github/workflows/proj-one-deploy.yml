@@ -29,6 +29,5 @@ jobs:
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          working-directory: projects/proj-one
           branch: gh-pages
           folder: projects/proj-one/build
