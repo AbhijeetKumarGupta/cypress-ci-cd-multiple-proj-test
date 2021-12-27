@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/AbhijeetKumarGupta/multiple-projects-test/issues"
   },
-  "homepage": "https://github.com/AbhijeetKumarGupta/multiple-projects-test#readme",
   "devDependencies": {
     "cypress": "^9.2.0"
   }
