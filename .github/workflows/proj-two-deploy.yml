@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "projects/proj-two/**"
+      - .github/workflows/proj-two.yml
 
 jobs:
   build:

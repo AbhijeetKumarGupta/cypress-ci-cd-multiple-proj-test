@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "projects/proj-one/**"
+      - .github/workflows/proj-one.yml
 
 jobs:
   build:
