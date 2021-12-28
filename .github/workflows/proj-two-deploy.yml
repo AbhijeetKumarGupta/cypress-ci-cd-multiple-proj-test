@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install NPM packages
+        run: npm ci
+        working-directory: projects/proj-two
+
+      - name: Build Project
+        run: npm run build
+        working-directory: projects/proj-two
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages-two
+          folder: projects/proj-two/build
+          working-directory: projects/proj-two
