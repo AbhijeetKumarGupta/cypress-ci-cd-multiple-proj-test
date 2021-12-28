@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install NPM packages
-        run: npm install
+        run: npm ci
         working-directory: projects/proj-one
 
       - name: Build Project
